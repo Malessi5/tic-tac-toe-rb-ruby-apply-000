@@ -109,14 +109,15 @@ end
 
 def play(board)
   counter = 0
+  if won?(board)
+    puts "Congratulations!"
+  elsif draw?(board)
+    puts "Draw!"
+  end
   until counter == 9
     turn(board)
   counter += 1
 
-if won?(board)
-  puts "Congratulations!"
-elsif draw?(board)
-  puts "Draw!"
-end
+
 end
 end
