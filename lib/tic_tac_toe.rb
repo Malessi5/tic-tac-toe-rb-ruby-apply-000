@@ -122,3 +122,4 @@ if won?(board)
 elsif draw?(board)
   puts "Draw!"
 end
+end
