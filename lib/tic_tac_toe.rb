@@ -83,7 +83,8 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
-
+elsif !valid_move?(board,index)
+  turn(board)
   end
 end
 
@@ -110,11 +111,10 @@ def play(board)
   until over?(board)
     turn(board)
   end
-  if full?(board)
       if won?(board)
        puts "Congratulations #{winner(board)}!"
       elsif draw?(board)
        puts "Cat's Game!"
     end
-end
+
 end
