@@ -69,7 +69,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index, token)
-  board[index] = current_player(board)
+  board[index] = current_player(board,token)
 end
 
 def valid_move?(board, index)
