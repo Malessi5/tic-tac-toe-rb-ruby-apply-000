@@ -108,6 +108,7 @@ def current_player(board)
   end
 end
 
+
 def play(board)
   counter = 0
   until counter == 9
@@ -115,4 +116,9 @@ def play(board)
 counter += 1
 
 end
+
+if won?(board)
+  puts "Congratulations!"
+elsif draw?(board)
+  puts "Draw!"
 end
