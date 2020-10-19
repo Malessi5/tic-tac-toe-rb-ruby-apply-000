@@ -69,7 +69,7 @@ def input_to_index(user_input)
 end
 
 def move(board, index, token)
-  board[index] = current_player(board,token)
+  board[index] = current_player(board)
 end
 
 def valid_move?(board, index)
@@ -98,13 +98,11 @@ end
 return turn
 end
 
-
-
-def current_player(board,token)
+def current_player(board)
   if turn_count(board) % 2 == 0
-    token = "X"
+    return "X"
   else
-    token = "O"
+    return "O"
   end
 end
 
