@@ -78,7 +78,7 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  input = gets.strip
+  input = gets.chomp
   index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index)
@@ -113,7 +113,7 @@ def play(board)
   counter = 0
   until counter == 9
     turn(board)
-counter += 1
+  counter += 1
 
 if won?(board)
   puts "Congratulations!"
