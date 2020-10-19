@@ -112,6 +112,7 @@ def play(board)
 
   until counter == 9
     if over?(board)
+      break
       if won?(board)
       puts "Congratulations!"
     elsif draw?(board)
