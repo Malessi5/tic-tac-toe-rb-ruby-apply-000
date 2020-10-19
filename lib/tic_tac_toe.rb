@@ -116,7 +116,7 @@ def play(board)
       if won?(board)
       puts "Congratulations!"
     elsif draw?(board)
-      puts "Draw!"
+      puts "Cat's Game!"
     end
     turn(board)
   counter += 1
