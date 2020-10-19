@@ -93,6 +93,7 @@ board.each do |space|
     turn += 1
   end
 end
+return turn
 end
 
 
