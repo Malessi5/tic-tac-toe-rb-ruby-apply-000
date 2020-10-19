@@ -87,13 +87,12 @@ def turn(board)
 end
 
 def turn_count(board)
-turn = 1
+turn = 0
 board.each do |space|
   if space == "X" || space =="O"
     turn += 1
   end
 end
-return turn
 end
 
 
