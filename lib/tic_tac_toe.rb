@@ -110,7 +110,7 @@ end
 
 
 def play(board)
-  until over?(board)
+  until over?(board) || full?(board)
     turn(board)
   end
       if won?(board)
