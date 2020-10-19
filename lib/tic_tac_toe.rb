@@ -113,7 +113,7 @@ def play(board)
   until counter == 9
     turn(board)
   counter += 1
-  
+
   if over?(board)
     if won?(board)
     puts "Congratulations!"
